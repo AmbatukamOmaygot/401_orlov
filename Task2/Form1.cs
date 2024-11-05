@@ -188,8 +188,8 @@ namespace Task2
                 if (triViolated)
                     state.Stop();
 
-                for (int j = i + 1; j < cityCount && !triViolated; j++) 
-                { 
+                for (int j = i + 1; j < cityCount && !triViolated; j++)
+                {
                     for (int k = j + 1; k < cityCount && !triViolated; k++)
                     {
                         double ij = cities[i].DistanceTo(cities[j]);
@@ -205,7 +205,7 @@ namespace Task2
                 }
             });
 
-            if (triViolated) 
+            if (triViolated)
                 MessageBox.Show("Неравенство треугольников нарушено!");
             else
                 MessageBox.Show("Города удовлетворяют\nнеравенству треугольников.");
@@ -405,7 +405,7 @@ namespace Task2
                     float x = scaleX(city.X);
                     float y = scaleY(city.Y);
                     g.FillEllipse(Brushes.Red, x - 5, y - 5, 10, 10);
-                    g.DrawString(city.ID.ToString(), Font, Brushes.Black, x + 5, y + 5);
+                    g.DrawString((city.ID + 1).ToString(), Font, Brushes.Black, x + 5, y + 5);
                 }
 
                 pictureBoxRoute.Image?.Dispose();
