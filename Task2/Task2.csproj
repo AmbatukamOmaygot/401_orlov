@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Reference Include="TSPGeneticAlgorithm">
-      <HintPath>..\TSPGeneticAlgorithm\bin\Debug\net7.0\TSPGeneticAlgorithm.dll</HintPath>
+      <HintPath>..\TSPGeneticAlgorithm\bin\Debug\net8.0\TSPGeneticAlgorithm.dll</HintPath>
     </Reference>
   </ItemGroup>
 

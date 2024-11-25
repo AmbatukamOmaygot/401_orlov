@@ -1,11 +1,13 @@
+using System.Text.Json.Serialization;
+
 namespace TSPGeneticAlgorithm.Models
 {
     public class City
     {
-        public int ID { get; }
-        public double X  { get; }
-        public double Y { get; }
-        public string Name { get; }
+        public int ID { get; set; }
+        public double X  { get; set; }
+        public double Y { get; set; }
+        public string Name { get; set; }
 
         public City(int id, double x, double y)
         {
@@ -15,6 +17,7 @@ namespace TSPGeneticAlgorithm.Models
             Name = $"City_{ID+1}";
         }
 
+        [JsonConstructor]
         public City(int id, string name, double x, double y)
         {
             ID = id;
